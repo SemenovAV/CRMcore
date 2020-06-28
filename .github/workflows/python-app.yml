@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pipenv
-        pipenv install flake8 pytest pytest-django coverage
+        pipenv install flake8 pytest pytest-django coverage --skip-lock
         pipenv install --skip-lock
         pipenv lock --pre --clear
     - name: Lint with flake8
