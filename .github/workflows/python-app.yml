@@ -34,4 +34,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        coverage run --source=fixapp -m manage.py test fixapp
+        coverage run --source=fixapp  manage.py test fixapp
