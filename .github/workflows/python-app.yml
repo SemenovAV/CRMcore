@@ -23,9 +23,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install flake8 pytest coverage pipenv
+        pip install pipenv
+        pipenv install flake8 pytest pytest-django coverage
         pipenv install --skip-lock
-        pipenv lock --pre 
+        pipenv lock --pre --clear
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
@@ -34,4 +35,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        coverage run --source=fixapp  manage.py test fixapp
+        coverage run --source=fixapp -m pytest fixapp
