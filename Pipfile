@@ -7,7 +7,7 @@ name = "pypi"
 printspam = "python -c \"print('I am a silly example, no one would need to do this')\""
 
 [packages]
-django = "*"
+Django = "*"
 
 [dev-packages]
 pre-commit = "*"
@@ -43,4 +43,4 @@ pytest-cov = "*"
 pytest-django = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
