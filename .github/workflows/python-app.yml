@@ -27,7 +27,7 @@ jobs:
       restore-keys: |
         ${{ runner.os }}-pipenv-
       - run: python3 -m pip install --upgrade pip
-      - run: python3 -m pip install pipenv
+      - run: python3 -m pip install pipenv flake8 pytest
       - run: pipenv install --skip-lock
       - run: pipenv lock --clear
 
