@@ -41,6 +41,9 @@ coverage = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-django = "*"
+flake8-django = "*"
+isort = "*"
+seed-isort-config = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8601f432565002e2180e842ea6f0f89dfd5f4497cfdffd876a97212e0a86fb11"
+            "sha256": "738e9273274cdb4e3dbaf8fb5f12ff1e68f9a1f46531894bbe168af6569b0d60"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -245,6 +245,14 @@
             "index": "pypi",
             "version": "==3.2.1"
         },
+        "flake8-django": {
+            "hashes": [
+                "sha256:c71da0e61b6119dae91cbffdbdb00f1d6ebe3f5d0c43f5bf136929997ab0b72d",
+                "sha256:fb4e8f669d3cf44297bb6e1c5d0a358ab0aba373cd4c69268cf2798de6bcbd9b"
+            ],
+            "index": "pypi",
+            "version": "==1.1.1"
+        },
         "flake8-eradicate": {
             "hashes": [
                 "sha256:804a39aef145c193e8d77770efc45df82e631b29c4456ecb5ff2e2e5996cf09a",
@@ -374,6 +382,14 @@
             ],
             "markers": "python_version < '3.8'",
             "version": "==1.7.0"
+        },
+        "isort": {
+            "hashes": [
+                "sha256:54da7e92468955c4fceacd0c86bd0ec997b0e1ee80d97f67c35a78b719dccab1",
+                "sha256:6e811fcb295968434526407adb8796944f1988c5b65e8139058f2014cbe100fd"
+            ],
+            "index": "pypi",
+            "version": "==4.3.21"
         },
         "mccabe": {
             "hashes": [
@@ -541,6 +557,14 @@
             "index": "pypi",
             "version": "==2.3.1"
         },
+        "seed-isort-config": {
+            "hashes": [
+                "sha256:8601fb715a5a4aac39256bbf73c2da6a81f964da9c9d9897ab9074db3663526f",
+                "sha256:be4cfef8f9a3fe8ea1817069c6b624538ac0b429636ec746edeb27e98ed628c8"
+            ],
+            "index": "pypi",
+            "version": "==2.2.0"
+        },
         "six": {
             "hashes": [
                 "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
@@ -600,6 +624,7 @@
                 "sha256:fc0fea399acb12edbf8a628ba8d2312f583bdbdb3335635db062fa98cf71fca4",
                 "sha256:fe460b922ec15dd205595c9b5b99e2f056fd98ae8f9f56b888e7a17dc2b757e7"
             ],
+            "markers": "python_version < '3.8'",
             "version": "==1.4.1"
         },
         "virtualenv": {

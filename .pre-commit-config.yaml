@@ -4,9 +4,20 @@
     - id: check-merge-conflict
     - id: debug-statements
 
+- repo: https://github.com/asottile/seed-isort-config
+  rev: v2.2.0
+  hooks:
+    - id: seed-isort-config
+
+- repo: https://github.com/timothycrosley/isort
+  rev: 4.3.21  # pick the isort version you'd like to use from https://github.com/timothycrosley/isort/releases
+  hooks:
+    - id: isort
+
 - repo: local
 
   hooks:
+
     - id: black
       name: black
       entry: black
@@ -44,7 +55,7 @@
             # flake8-pytest-style
                 # PT013 found incorrect import of pytest, use simple 'import pytest' instead
             "--max-line-length=110",
-            "--per-file-ignores=tests/*.py:S101"
+            "--per-file-ignores=*/tests*.py:S101"
             # S101 Use of assert detected
         ]
 
