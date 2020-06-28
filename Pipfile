@@ -45,5 +45,8 @@ flake8-django = "*"
 isort = "*"
 seed-isort-config = "*"
 
+[script]
+test = "coverage run --source=fixapp -m pytest fixapp"
+
 [requires]
 python_version = "3.7"
