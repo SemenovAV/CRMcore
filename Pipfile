@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 Django = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 pre-commit = "*"
