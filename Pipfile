@@ -3,9 +3,6 @@ url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[scripts]
-printspam = "python -c \"print('I am a silly example, no one would need to do this')\""
-
 [packages]
 Django = "*"
 
@@ -44,9 +41,6 @@ pytest-django = "*"
 flake8-django = "*"
 isort = "*"
 seed-isort-config = "*"
-
-[script]
-test = "coverage run --source=fixapp -m pytest fixapp"
 
 [requires]
 python_version = "3.7"
