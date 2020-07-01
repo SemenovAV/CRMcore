@@ -18,12 +18,12 @@
 
   hooks:
 
-    # - id: black
-    #   name: black
-    #   entry: black
-    #   language: system
-    #   types: [python]
-    #   args: [--line-length=110, --target-version=py37]
+    - id: black
+      name: black
+      entry: black
+      language: system
+      types: [python]
+      args: [--target-version=py37]
 
     - id: autoflake
       name: autoflake
@@ -44,7 +44,7 @@
                 # W503 line break before binary operator
             # flake8-pytest-style
                 # PT013 found incorrect import of pytest, use simple 'import pytest' instead
-            "--max-line-length=110",
+            "--max-line-length=88",
             "--per-file-ignores=*/tests*.py:S101",
             "--exclude=manage.py"
             # S101 Use of assert detected
